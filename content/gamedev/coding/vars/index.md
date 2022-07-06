@@ -1,6 +1,6 @@
 ---
 title: Variables, Types & Operators
-weight: 2
+weight: 1
 ---
 
 # Variables
@@ -11,3 +11,9 @@ weight: 2
 
 # Operators
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ceqfjW7dIds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Variable Scope
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a1Qm3J_8qhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Constants and Enumerations
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SUBr_K-KacA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
