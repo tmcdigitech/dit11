@@ -6,12 +6,11 @@ weight: 7
 # First Person Movement
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f473C43s8nE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
 ## PlayerCam
-{{< highlight csharp "lineNos=table,lineNoStart=1" >}}
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class PlayerCam : MonoBehaviour
 {
@@ -19,13 +18,14 @@ public class PlayerCam : MonoBehaviour
     public float sensY;
 
     public Transform orientation;
-    public Transform camHolder;
+    //public Transform camHolder;
 
     float xRotation;
     float yRotation;
 
     private void Start()
     {
+        // Lock the cursor in the centre and hide
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -39,23 +39,43 @@ public class PlayerCam : MonoBehaviour
         yRotation += mouseX;
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f); //stop looking to far
+
+        
 
         // rotate cam and orientation
-        camHolder.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
     }
 
-    public void DoFov(float endValue)
+}
+{{< /highlight >}}
+
+
+
+## MoveCamera
+{{< highlight csharp "lineNos=table,lineNoStart=1" >}}
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MoveCamera : MonoBehaviour
+{
+
+    public Transform cameraPosition;
+    // Start is called before the first frame update
+    void Start()
     {
-        GetComponent<Camera>().DOFieldOfView(endValue, 0.25f);
+        
     }
 
-    public void DoTilt(float zTilt)
+    // Update is called once per frame
+    void Update()
     {
-        transform.DOLocalRotate(new Vector3(0, 0, zTilt), 0.25f);
+        transform.position = cameraPosition.position;
     }
 }
+
 {{< /highlight >}}
 
 ## PlayerMovement
@@ -63,7 +83,6 @@ public class PlayerCam : MonoBehaviour
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -77,8 +96,8 @@ public class PlayerMovement : MonoBehaviour
     public float airMultiplier;
     bool readyToJump;
 
-    [HideInInspector] public float walkSpeed;
-    [HideInInspector] public float sprintSpeed;
+    //[HideInInspector] public float walkSpeed;
+    //[HideInInspector] public float sprintSpeed;
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
@@ -104,7 +123,6 @@ public class PlayerMovement : MonoBehaviour
 
         readyToJump = true;
     }
-
     private void Update()
     {
         // ground check
@@ -125,13 +143,14 @@ public class PlayerMovement : MonoBehaviour
         MovePlayer();
     }
 
+
     private void MyInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
         // when to jump
-        if(Input.GetKey(jumpKey) && readyToJump && grounded)
+        if (Input.GetKey(jumpKey) && readyToJump && grounded)
         {
             readyToJump = false;
 
@@ -145,13 +164,13 @@ public class PlayerMovement : MonoBehaviour
     {
         // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-
+        rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
         // on ground
-        if(grounded)
+        if (grounded)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 
         // in air
-        else if(!grounded)
+        else if (!grounded)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
     }
 
@@ -160,12 +179,13 @@ public class PlayerMovement : MonoBehaviour
         Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         // limit velocity if needed
-        if(flatVel.magnitude > moveSpeed)
+        if (flatVel.magnitude > moveSpeed)
         {
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
         }
     }
+
 
     private void Jump()
     {
@@ -178,5 +198,7 @@ public class PlayerMovement : MonoBehaviour
     {
         readyToJump = true;
     }
+
 }
+
 {{< /highlight >}}
