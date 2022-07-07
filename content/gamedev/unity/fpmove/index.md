@@ -8,6 +8,7 @@ weight: 7
 
 
 ## PlayerCam
+{{< highlight csharp "lineNos=table,lineNoStart=1" >}}
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
