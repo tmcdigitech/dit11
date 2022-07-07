@@ -6,7 +6,7 @@ weight: 1
 # First Person Movement
 <<iframe width="560" height="315" src="https://www.youtube.com/embed/f473C43s8nE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{{< highlight c# "lineNos=table,lineNoStart=1" >}}
+{{< highlight python "lineNos=table,lineNoStart=1" >}}
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
