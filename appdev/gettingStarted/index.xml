@@ -1,13 +1,158 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting Started on TMC - 11 Digital Tech | Semester 1</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/</link><description>Recent content in Getting Started on TMC - 11 Digital Tech | Semester 1</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><atom:link href="https://tmcdigitech.github.io/dit11/appdev/gettingStarted/index.xml" rel="self" type="application/rss+xml"/><item><title>Software</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/software/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/software/</guid><description>To start using Kivy to develop apps, you will need to:
-Open the Company Portal: Find and install Visual Studio Code (NOT Visual Studio Community): Find and install Python (3.9):
-Open Visual Studio Code and install the Python Extension</description></item><item><title>1. Hello World</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/helloworld/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/helloworld/</guid><description>Taken from prosperocoder.com
-Hello World – A Basic Kivy App Well, we’re going to write a basic Kivy app that will display the Hello World text. In Kivy, like in many other GUI libraries and frameworks, static text is usually displayed in a label. In Kivy we call simple GUI elements like labels, buttons, sliders, check boxes, etc. widgets, although widgets don’t have to be simple at all and you can create your own widgets, which we are going to do later.</description></item><item><title>2. Kv Files</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/kvfiles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/kvfiles/</guid><description>Taken from prosperocoder.com
-Our program contains just one widget, the label. This is all as far as presentation is concerned. We’ll move that part to a new file and leave the rest in the main.py file. So, after we remove the presentation part from the main.py, as well as the comments to make the file clear and transparent, this is what we’ll have:
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 # We&amp;#39;re using Kivy, so we&amp;#39;ll need the kivy module import kivy # We need the App class.</description></item><item><title>3. Label Properties</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/labels/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/labels/</guid><description>Taken from prosperocoder.com
-Here’s the code again.
-The Python file:
-1 2 3 4 5 6 7 8 9 10 11 12 File name: main.py import kivy from kivy.app import App from kivy.uix.button import Label class HelloWorldApp(App): def build(self): return Label() if __name__ == &amp;#39;__main__&amp;#39;: HelloWorldApp().run() and the kv file: 1 2 3 4 # File name: helloworld.kv &amp;lt;Label&amp;gt;: text: &amp;#39;Hello World!&amp;#39; This program displays a label. The label has a text property.</description></item><item><title>4. Buttons</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/buttons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/buttons/</guid><description>Taken from prosperocoder.com
-A Button Widget is Basically a Label… In Kivy the Button class inherits from Label, so they have the same properties in common, plus the button has some extra functionality. In particular they share the text property. Let’s modify our main.py and helloworld.kv files so that our program displays a button widget instead of a label. First, let the changes be as few as possible. Here’s the main.</description></item><item><title>Flowcharts</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/flowcharts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/flowcharts/</guid><description>Flowcharts are a visual representation of program flow. A flowchart normally uses a combination of blocks and arrows to represent actions and sequence. Blocks typically represent actions. The order in which actions occur is shown using arrows that point from statement to statement. Sometimes a block will have multiple arrows coming out of it, representing a step where a decision must be made about which path to follow.
-Start and End symbols are represented as rounded rectangles, usually containing the word &amp;ldquo;Star&amp;rdquo; or &amp;ldquo;End&amp;rdquo;, but can be more specific such as &amp;ldquo;Power Robot Off&amp;rdquo; or &amp;ldquo;Stop All Motors&amp;rdquo;.</description></item><item><title>Programming Constructs</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/constructs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/constructs/</guid><description>Programs are designed using common building blocks. These building blocks, known as programming constructs (or programming concepts), form the basis for all programs.
-There are three basic building blocks to consider:
-sequence is the order in which instructions occur and are processed selection determines which path a program takes when it is running iteration is the repeated execution of a section of code when a program is running Sequence Sequence is the order in which programming statements are executed.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting Started on TMC - 11 Digital Tech | Semester 1</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/</link><description>Recent content in Getting Started on TMC - 11 Digital Tech | Semester 1</description><generator>Hugo</generator><language>en-au</language><atom:link href="https://tmcdigitech.github.io/dit11/appdev/gettingStarted/index.xml" rel="self" type="application/rss+xml"/><item><title>Software</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/software/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/software/</guid><description>&lt;p>To start using Kivy to develop apps, you will need to:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Open the &lt;strong>Company Portal&lt;/strong>:
+&lt;img src="https://image.winudf.com/v2/image1/Y29tLm1pY3Jvc29mdC53aW5kb3dzaW50dW5lLmNvbXBhbnlwb3J0YWxfaWNvbl8xNjEwNDgyMDcyXzA1MQ/icon.png?w=&amp;amp;fakeurl=1" alt="Company Portal Logo" />&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Find and install &lt;strong>Visual Studio Code&lt;/strong> (NOT Visual Studio Community):
+&lt;img src="https://code.visualstudio.com/opengraphimg/opengraph-home.png" alt="Visual Studio Code logo" />&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Find and install &lt;strong>Python&lt;/strong> (3.9):&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Open Visual Studio Code and install the Python Extension
+&lt;figure>&lt;img src="Screenshot%202022-02-23%20115053.png">
+&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>1. Hello World</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/helloworld/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/helloworld/</guid><description>&lt;p>&lt;em>Taken from &lt;a class="gdoc-markdown__link" href="https://prosperocoder.com/posts/kivy/kivy-part-3-a-basic-kivy-app/">prosperocoder.com&lt;/a>&lt;/em>&lt;/p>
+&lt;div class="gdoc-page__anchorwrap">
+ &lt;h2 id="hello-world--a-basic-kivy-app">
+ Hello World – A Basic Kivy App
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/gettingStarted/helloworld/#hello-world--a-basic-kivy-app" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Hello World – A Basic Kivy App" href="#hello-world--a-basic-kivy-app">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h2>
+&lt;/div>&lt;p>Well, we’re going to write a basic Kivy app that will display the Hello World text. In Kivy, like in many other GUI libraries and frameworks, static text is usually displayed in a label. In Kivy we call simple GUI elements like labels, buttons, sliders, check boxes, etc. widgets, although widgets don’t have to be simple at all and you can create your own widgets, which we are going to do later.&lt;/p></description></item><item><title>2. Kv Files</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/kvfiles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/kvfiles/</guid><description>&lt;p>&lt;em>Taken from &lt;a class="gdoc-markdown__link" href="https://prosperocoder.com/posts/kivy/kivy-part-3-a-basic-kivy-app/">prosperocoder.com&lt;/a>&lt;/em>&lt;/p>
+&lt;p>Our program contains just one widget, the label. This is all as far as presentation is concerned. We’ll move that part to a new file and leave the rest in the main.py file. So, after we remove the presentation part from the main.py, as well as the comments to make the file clear and transparent, this is what we’ll have:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># We&amp;#39;re using Kivy, so we&amp;#39;ll need the kivy module&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">kivy&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># We need the App class. Our application is going to inherit from it.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.app&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">App&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># We also need the Label widget.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.uix.button&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Label&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Here comes the application class. It inherits from App.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">HelloWorldApp&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">App&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">build&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">Label&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># And this is where we actually run the app.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="vm">__name__&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s1">&amp;#39;__main__&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">HelloWorldApp&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;p>As you can see, now we’re just telling the app that a label should be used, but it doesn’t know anything more about the label. In particular, it doesn’t know what text should go in the label. This is what the kv file is going to take care of. By the way, I’m going to call the files written in the Kivy language kv files, for the sake of brevity. These files are easily recognizable by the kv extension.&lt;/p></description></item><item><title>3. Label Properties</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/labels/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/labels/</guid><description>&lt;p>&lt;em>Taken from &lt;a class="gdoc-markdown__link" href="https://prosperocoder.com/posts/kivy/kivy-part-3-a-basic-kivy-app/">prosperocoder.com&lt;/a>&lt;/em>&lt;/p>
+&lt;p>Here’s the code again.&lt;/p>
+&lt;p>The Python file:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl"> &lt;span class="n">File&lt;/span> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">main&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">py&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">kivy&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.app&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">App&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.uix.button&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Label&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">HelloWorldApp&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">App&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">build&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">Label&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="vm">__name__&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s1">&amp;#39;__main__&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">HelloWorldApp&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;p>and the kv file:
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># File name: helloworld.kv&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">Label&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s1">&amp;#39;Hello World!&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/p>
+&lt;p>This program displays a label. The label has a text property. This is a special Kivy property, not to be confused with the regular Python property. We’re going to use Kivy properties a lot, and even create our own ones, just bear with me. Anyway, the Label class has some more properties. We’re going to have a look at the Label properties in this part and then in the next part we’ll see how to use other widgets like buttons, toggle buttons, check boxes, text inputs and sliders, both in Python and in the Kivy language. These are the widgets we’ll be making use of in our project, but there many others, which you can look up in the documentation, which you can find at kivy.org.&lt;/p></description></item><item><title>4. Buttons</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/buttons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/buttons/</guid><description>&lt;p>&lt;em>Taken from &lt;a class="gdoc-markdown__link" href="https://prosperocoder.com/posts/kivy/kivy-part-3-a-basic-kivy-app/">prosperocoder.com&lt;/a>&lt;/em>&lt;/p>
+&lt;div class="gdoc-page__anchorwrap">
+ &lt;h2 id="a-button-widget-is-basically-a-label">
+ A Button Widget is Basically a Label…
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/gettingStarted/buttons/#a-button-widget-is-basically-a-label" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor A Button Widget is Basically a Label…" href="#a-button-widget-is-basically-a-label">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h2>
+&lt;/div>&lt;p>In Kivy the Button class inherits from Label, so they have the same properties in common, plus the button has some extra functionality. In particular they share the text property. Let’s modify our main.py and helloworld.kv files so that our program displays a button widget instead of a label. First, let the changes be as few as possible. Here’s the main.py file:&lt;/p></description></item><item><title>Flowcharts</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/flowcharts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/flowcharts/</guid><description>&lt;p>Flowcharts are a visual representation of program flow. A flowchart normally uses
+a combination of blocks and arrows to represent actions and sequence. Blocks typically
+represent actions. The order in which actions occur is shown using arrows that point from
+statement to statement. Sometimes a block will have multiple arrows coming out of it,
+representing a step where a decision must be made about which path to follow.&lt;/p>
+&lt;div class="gdoc-columns flex flex-wrap">
+ 
+ &lt;div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+ &lt;img src="flowchart_symbols.png" alt="Flowchart Symbols" />
+ &lt;/div>
+ 
+ &lt;div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+ &lt;p>&lt;strong>Start&lt;/strong> and &lt;strong>End&lt;/strong> symbols are represented as rounded rectangles,
+usually containing the word &amp;ldquo;Star&amp;rdquo; or &amp;ldquo;End&amp;rdquo;, but can be more
+specific such as &amp;ldquo;Power Robot Off&amp;rdquo; or &amp;ldquo;Stop All Motors&amp;rdquo;.&lt;/p></description></item><item><title>Programming Constructs</title><link>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/constructs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/gettingStarted/constructs/</guid><description>&lt;p>Programs are designed using common building blocks. These building blocks, known as programming constructs (or programming concepts), form the basis for all programs.&lt;/p>
+&lt;p>There are three basic building blocks to consider:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>sequence&lt;/strong> is the order in which instructions occur and are processed&lt;/li>
+&lt;li>&lt;strong>selection&lt;/strong> determines which path a program takes when it is running&lt;/li>
+&lt;li>&lt;strong>iteration&lt;/strong> is the repeated execution of a section of code when a program is running&lt;/li>
+&lt;/ul>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eSYeHlwDCNA?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;div class="gdoc-page__anchorwrap">
+ &lt;h2 id="sequence">
+ Sequence
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/gettingStarted/constructs/#sequence" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Sequence" href="#sequence">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h2>
+&lt;/div>&lt;p>Sequence is the order in which programming statements are executed. Programming statements usually run one after another in order, unless one of the other programming constructs is used. The sequence of a program is extremely important as once these are translated, carrying out instructions in the wrong order leads to a program performing incorrectly.&lt;/p></description></item></channel></rss>

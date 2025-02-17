@@ -1,3 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>App Development on TMC - 11 Digital Tech | Semester 1</title><link>https://tmcdigitech.github.io/dit11/appdev/</link><description>Recent content in App Development on TMC - 11 Digital Tech | Semester 1</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><atom:link href="https://tmcdigitech.github.io/dit11/appdev/index.xml" rel="self" type="application/rss+xml"/><item><title>KivyMD</title><link>https://tmcdigitech.github.io/dit11/appdev/kivymd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/kivymd/</guid><description>What is KivyMD Is a collection of Material Design compliant widgets for use with, Kivy cross-platform graphical framework a framework for cross-platform, touch-enabled graphical applications. The project’s goal is to approximate Google’s Material Design spec as close as possible without sacrificing ease of use or application performance.
-https://kivymd.readthedocs.io/en/latest/#
-After setting up your environment as explained in Hello World install KivyMD in a Terminal window as follows: pip3 install --trusted-host pypi.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>App Development on TMC - 11 Digital Tech | Semester 1</title><link>https://tmcdigitech.github.io/dit11/appdev/</link><description>Recent content in App Development on TMC - 11 Digital Tech | Semester 1</description><generator>Hugo</generator><language>en-au</language><atom:link href="https://tmcdigitech.github.io/dit11/appdev/index.xml" rel="self" type="application/rss+xml"/><item><title>KivyMD</title><link>https://tmcdigitech.github.io/dit11/appdev/kivymd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/kivymd/</guid><description>&lt;div class="gdoc-page__anchorwrap">
+ &lt;h2 id="what-is-kivymd">
+ What is KivyMD
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/kivymd/#what-is-kivymd" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor What is KivyMD" href="#what-is-kivymd">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h2>
+&lt;/div>&lt;p>&lt;figure>&lt;img src="https://tmcdigitech.github.io/dit11/appdev/kivymd/previous.png">
+&lt;/figure>
+
+Is a collection of Material Design compliant widgets for use with, Kivy cross-platform graphical framework a framework for cross-platform, touch-enabled graphical applications. The project’s goal is to approximate Google’s Material Design spec as close as possible without sacrificing ease of use or application performance.&lt;/p>
+&lt;p>&lt;a class="gdoc-markdown__link" href="https://kivymd.readthedocs.io/en/latest/#">https://kivymd.readthedocs.io/en/latest/#&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>After setting up your environment as explained in Hello World install KivyMD in a Terminal window as follows:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code class="language-terminal" data-lang="terminal">pip3 install --trusted-host pypi.org --trusted-host files.pythonhosted.org kivymd&lt;/code>&lt;/pre>
+&lt;p>Go to the KivyMD documentation to get started.
+&lt;a class="gdoc-markdown__link" href="https://kivymd.readthedocs.io/en/latest/getting-started/">https://kivymd.readthedocs.io/en/latest/getting-started/&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,9 +1,180 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Basics on TMC - 11 Digital Tech | Semester 1</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/</link><description>Recent content in The Basics on TMC - 11 Digital Tech | Semester 1</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><atom:link href="https://tmcdigitech.github.io/dit11/appdev/basics/index.xml" rel="self" type="application/rss+xml"/><item><title>Buttons and Labels</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/events/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/events/</guid><description>Creating a .kv File Separated our logic from our styling and elements There are a few conventions we need to follow when creating a .kv file.
-Naming: The name of your .kv file must follow the rules below in order for python/kivy to be able to see and load the file.
-It must be all lowercase It must match with the name of your main class. (The one that has the build method) If the name of your main class ends in &amp;ldquo;app&amp;rdquo; (lowercase or uppercase) you must not include &amp;ldquo;app&amp;rdquo; in your file name.</description></item><item><title>Classes and Methods</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/classesandmethods/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/classesandmethods/</guid><description>Object Oriented Programming (OOP) OOP has self-contained objects containing both the programming routine/procedures and the data being processed. These objects interact by sending data to one another.
-In OOP, you write classes that represent real world things and create objects based on these classes. Classes attributes as well as procedures (often known as methods).
-Class The class is the blueprint, or template, that defines what an object is. This includes the type of data an object can hold, its initial value and how the object behaves.</description></item><item><title>Python</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/python/</guid><description>If you are new to Python, here is an good interactive guide you can get started with:
-Aposteriori: Introduction to Python</description></item><item><title>Activity 1</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/activity1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/activity1/</guid><description>Setting up The Python Script 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 import kivy from kivy.app import App from kivy.uix.label import Label from kivy.uix.gridlayout import GridLayout from kivy.uix.textinput import TextInput from kivy.uix.button import Button from kivy.uix.widget import Widget from kivy.properties import ObjectProperty class MyGrid(Widget): pass class MyApp(App): def build(self): return MyGrid() if __name__ == &amp;#34;__main__&amp;#34;: MyApp().</description></item><item><title>Activity 2</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/activity2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/activity2/</guid><description>Create a simple calculator Setting up The Python Script 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 import kivy from kivy.app import App from kivy.uix.widget import Widget from kivy.properties import ObjectProperty class MyGrid(Widget): pass class MyApp(App): def build(self): return MyGrid() if __name__ == &amp;#34;__main__&amp;#34;: MyApp().run() Creating a .kv File Separated our logic from our styling and elements There are a few conventions we need to follow when creating a .</description></item><item><title>Activity 3</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/activity3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/activity3/</guid><description>Create a Password Generator Learning how to create a password generator can be the perfect project to learn or review basic Python and Kivy concepts.
-To create a password generator in Python you can use a for loop that randomly selects alphanumeric characters, digits and punctuation characters to generate the password string. You can set the password length that defines the number of loop iterations. Also, using a nested for loop you can improve the password generator to generate multiple passwords.</description></item><item><title>More Widgets</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/widgets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/widgets/</guid><description>Taken from prosperocoder.com
-The Check Box Kivy Widget Let’s start with the check box Kivy widget. The check box is a two-state button that can be either checked or unchecked. Later we’ll see that it can be used as a radio button as well, if it’s in a group, but for now let’s just have a look at a single check box.
-The main property of a check box is active, which is True if it’s checked and False otherwise.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Basics on TMC - 11 Digital Tech | Semester 1</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/</link><description>Recent content in The Basics on TMC - 11 Digital Tech | Semester 1</description><generator>Hugo</generator><language>en-au</language><atom:link href="https://tmcdigitech.github.io/dit11/appdev/basics/index.xml" rel="self" type="application/rss+xml"/><item><title>Buttons and Labels</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/events/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/events/</guid><description>&lt;div class="gdoc-page__anchorwrap">
+ &lt;h2 id="creating-a-kv-file">
+ Creating a .kv File
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/basics/events/#creating-a-kv-file" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Creating a .kv File" href="#creating-a-kv-file">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h2>
+&lt;/div>&lt;div class="gdoc-page__anchorwrap">
+ &lt;h3 id="separated-our-logic-from-our-styling-and-elements">
+ Separated our logic from our styling and elements
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/basics/events/#separated-our-logic-from-our-styling-and-elements" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Separated our logic from our styling and elements" href="#separated-our-logic-from-our-styling-and-elements">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h3>
+&lt;/div>&lt;p>There are a few conventions we need to follow when creating a .kv file.&lt;/p>
+&lt;p>Naming: The name of your .kv file must follow the rules below in order for python/kivy to be able to see and load the file.&lt;/p></description></item><item><title>Classes and Methods</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/classesandmethods/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/classesandmethods/</guid><description>&lt;div class="gdoc-page__anchorwrap">
+ &lt;h2 id="object-oriented-programming-oop">
+ Object Oriented Programming (OOP)
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/basics/classesandmethods/#object-oriented-programming-oop" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Object Oriented Programming (OOP)" href="#object-oriented-programming-oop">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h2>
+&lt;/div>&lt;p>OOP has self-contained objects containing both the programming routine/procedures and the data being processed. These objects interact by sending data to one another.&lt;/p>
+&lt;p>In OOP, you write classes that represent real world things and create objects based on these classes. Classes attributes as well as procedures (often known as methods).&lt;/p>
+&lt;p>Class
+The class is the blueprint, or template, that defines what an object is. This includes the type of data an object can hold, its initial value and how the object behaves.&lt;/p></description></item><item><title>Python</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/python/</guid><description>&lt;p>If you are new to Python, here is an good interactive guide you can get started with:&lt;/p>
+&lt;p>&lt;a class="gdoc-markdown__link" href="https://aposteriori.trinket.io/introduction-to-python">Aposteriori: Introduction to Python&lt;/a>&lt;/p></description></item><item><title>Activity 1</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/activity1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/activity1/</guid><description>&lt;div class="gdoc-page__anchorwrap">
+ &lt;h2 id="setting-up-the-python-script">
+ Setting up The Python Script
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/basics/activity1/#setting-up-the-python-script" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Setting up The Python Script" href="#setting-up-the-python-script">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h2>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">kivy&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.app&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">App&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.uix.label&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Label&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.uix.gridlayout&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">GridLayout&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.uix.textinput&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">TextInput&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.uix.button&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Button&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.uix.widget&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Widget&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.properties&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">ObjectProperty&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">MyGrid&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Widget&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">pass&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">MyApp&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">App&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">build&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">MyGrid&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="vm">__name__&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s2">&amp;#34;__main__&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">MyApp&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;div class="gdoc-page__anchorwrap">
+ &lt;h2 id="creating-a-kv-file">
+ Creating a .kv File
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/basics/activity1/#creating-a-kv-file" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Creating a .kv File" href="#creating-a-kv-file">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h2>
+&lt;/div>&lt;div class="gdoc-page__anchorwrap">
+ &lt;h3 id="separated-our-logic-from-our-styling-and-elements">
+ Separated our logic from our styling and elements
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/basics/activity1/#separated-our-logic-from-our-styling-and-elements" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Separated our logic from our styling and elements" href="#separated-our-logic-from-our-styling-and-elements">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h3>
+&lt;/div>&lt;p>There are a few conventions we need to follow when creating a .kv file.&lt;/p></description></item><item><title>Activity 2</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/activity2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/activity2/</guid><description>&lt;div class="gdoc-page__anchorwrap">
+ &lt;h1 id="create-a-simple-calculator">
+ Create a simple calculator
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/basics/activity2/#create-a-simple-calculator" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Create a simple calculator" href="#create-a-simple-calculator">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h1>
+&lt;/div>&lt;div class="gdoc-page__anchorwrap">
+ &lt;h2 id="setting-up-the-python-script">
+ Setting up The Python Script
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/basics/activity2/#setting-up-the-python-script" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Setting up The Python Script" href="#setting-up-the-python-script">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h2>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">kivy&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.app&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">App&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.uix.widget&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Widget&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">kivy.properties&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">ObjectProperty&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">MyGrid&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Widget&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">pass&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">MyApp&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">App&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">build&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">MyGrid&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="vm">__name__&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s2">&amp;#34;__main__&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">MyApp&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;div class="gdoc-page__anchorwrap">
+ &lt;h2 id="creating-a-kv-file">
+ Creating a .kv File
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/basics/activity2/#creating-a-kv-file" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Creating a .kv File" href="#creating-a-kv-file">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h2>
+&lt;/div>&lt;div class="gdoc-page__anchorwrap">
+ &lt;h3 id="separated-our-logic-from-our-styling-and-elements">
+ Separated our logic from our styling and elements
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/basics/activity2/#separated-our-logic-from-our-styling-and-elements" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Separated our logic from our styling and elements" href="#separated-our-logic-from-our-styling-and-elements">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h3>
+&lt;/div>&lt;p>There are a few conventions we need to follow when creating a .kv file.&lt;/p></description></item><item><title>Activity 3</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/activity3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/activity3/</guid><description>&lt;div class="gdoc-page__anchorwrap">
+ &lt;h2 id="create-a-password-generator">
+ Create a Password Generator
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/basics/activity3/#create-a-password-generator" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Create a Password Generator" href="#create-a-password-generator">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h2>
+&lt;/div>&lt;p>Learning how to create a password generator can be the perfect project to learn or review basic Python and Kivy concepts.&lt;/p>
+&lt;p>To create a password generator in Python you can use a for loop that randomly selects alphanumeric characters, digits and punctuation characters to generate the password string. You can set the password length that defines the number of loop iterations. Also, using a nested for loop you can improve the password generator to generate multiple passwords.&lt;/p></description></item><item><title>More Widgets</title><link>https://tmcdigitech.github.io/dit11/appdev/basics/widgets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit11/appdev/basics/widgets/</guid><description>&lt;p>&lt;em>Taken from &lt;a class="gdoc-markdown__link" href="https://prosperocoder.com/posts/kivy/kivy-part-7-even-more-widgets/">prosperocoder.com&lt;/a>&lt;/em>&lt;/p>
+&lt;div class="gdoc-page__anchorwrap">
+ &lt;h2 id="the-check-box-kivy-widget">
+ The Check Box Kivy Widget
+ &lt;a data-clipboard-text="https://tmcdigitech.github.io/dit11/appdev/basics/widgets/#the-check-box-kivy-widget" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor The Check Box Kivy Widget" href="#the-check-box-kivy-widget">
+ &lt;svg class="icon gdoc_link">&lt;use xlink:href="#gdoc_link">&lt;/use>&lt;/svg>
+ &lt;/a>
+ &lt;/h2>
+&lt;/div>&lt;p>Let’s start with the check box Kivy widget. The check box is a two-state button that can be either checked or unchecked. Later we’ll see that it can be used as a radio button as well, if it’s in a group, but for now let’s just have a look at a single check box.&lt;/p></description></item></channel></rss>
