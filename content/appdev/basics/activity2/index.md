@@ -87,7 +87,7 @@ We will start by generating a random string of 12 characters. To do that we will
 
 {{< figure src="Screenshot 2022-03-07 155754a.png" title="" >}}
 
-<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/95f37fdc-dc59-4222-8821-92af3d3a2141?autoplay=false&showinfo=true" allowfullscreen style="border:none;"></iframe>
+<iframe src="https://tmccatholiceduau-my.sharepoint.com/personal/tnykke_tmc_catholic_edu_au/_layouts/15/embed.aspx?UniqueId=521d9994-807e-5f49-a9eb-18a041d92d4b&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Kivy Activity 2-20220309_123103.mp4"></iframe>
 
 
 
