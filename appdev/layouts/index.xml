@@ -21,7 +21,7 @@
  &lt;/a>
  &lt;/h1>
 &lt;/div>&lt;p>Watch the following video to learn how you can use more than one screen in your app.&lt;/p>
-&lt;iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/fad814b9-d771-4e38-8716-e25e657cfda6?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;">&lt;/iframe>
+&lt;iframe src="https://tmccatholiceduau-my.sharepoint.com/personal/tnykke_tmc_catholic_edu_au/_layouts/15/embed.aspx?UniqueId=2665bbe7-a267-58a9-b3ca-a5ba64344563&amp;embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&amp;referrer=StreamWebApp&amp;referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Kivy ScreenManager-20220322_112205.mp4">&lt;/iframe>
 &lt;div class="gdoc-page__anchorwrap">
  &lt;h3 id="include-the-following">
  Include the following
