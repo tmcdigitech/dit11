@@ -165,6 +165,6 @@ https://weatherdbi.herokuapp.com/data/weather/{location}
 - What other data can you display from the API?
 - Now show it on your APP!
 
-<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/2e58e789-68eb-4183-8f83-05b56b1ff174?autoplay=false&showinfo=true" allowfullscreen style="border:none;"></iframe>
+<iframe src="https://tmccatholiceduau-my.sharepoint.com/personal/tnykke_tmc_catholic_edu_au/_layouts/15/embed.aspx?UniqueId=c8632564-d060-535e-c769-710d0387f4fc&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="API Kivy pt2-20220310_015136.mp4"></iframe>
 
-<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/e1fb1daa-351d-464c-8c45-8c21b81c6ef0?autoplay=false&showinfo=true" allowfullscreen style="border:none;"></iframe>
+<iframe src="https://tmccatholiceduau-my.sharepoint.com/personal/tnykke_tmc_catholic_edu_au/_layouts/15/embed.aspx?UniqueId=96e73101-8536-5dc9-21ce-0a68fb0194a7&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="API Kivy pt3-20220310_015150.mp4"></iframe>

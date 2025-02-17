@@ -6,7 +6,7 @@ weight: 1
 # Using more than one screen
 Watch the following video to learn how you can use more than one screen in your app.
 
-<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/fad814b9-d771-4e38-8716-e25e657cfda6?autoplay=false&showinfo=true" allowfullscreen style="border:none;"></iframe>
+<iframe src="https://tmccatholiceduau-my.sharepoint.com/personal/tnykke_tmc_catholic_edu_au/_layouts/15/embed.aspx?UniqueId=2665bbe7-a267-58a9-b3ca-a5ba64344563&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Kivy ScreenManager-20220322_112205.mp4"></iframe>
 
 ### Include the following
 {{< highlight python "lineNos=table,lineNoStart=1" >}}
